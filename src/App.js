@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 import './App.css';
 //components
 import topNews from './components/topNews/topNews.js';
-// import newNews from './components/newNews.js';
-// import bestNews from './components/bestNews.js';
+import newNews from './components/newNews/newNews.js';
+import bestNews from './components/bestNews/bestNews.js';
 // import store from './redux/store.js';
 import store from './redux/store';
 
@@ -24,8 +24,8 @@ class App extends React.Component {
         <BrowserRouter>
           <Switch>
             <Route path="/top" component = {topNews} />
-            {/* <Route path="/new" component={newNews} />
-            <Route path="/best" component={bestNews} /> */}
+            <Route path="/new" component={newNews} />
+            <Route path="/best" component={bestNews} />
           </Switch>
         </BrowserRouter>
       </Provider>

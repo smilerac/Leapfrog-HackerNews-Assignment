@@ -17,12 +17,17 @@ class topNews extends React.Component{
           return response.json()   //conversion to json
         }).then(newsTop => {
             console.log('newsTop',{newsTop});
+            newsTop = newsTop.slice(0, 5);   
+            // newsTop[4] = newsTop[0]
+            // console.log('newsTop after',newsTop); 
             this.props.updateTopNews(newsTop);
         })
+
+        
       }
 
     render(){
-        console.log('props coming in yay',this.props.newsTop)
+        // console.log('props coming in yay',this.props.newsTop)
         return(
             <div>
                 {this.props.newsTop.map(eachTopNewsID => <SingleNews id={eachTopNewsID}/>)}
@@ -38,7 +43,7 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state =>{
-    console.log('value of state.newstop',state.topNews)
+    // console.log('value of state.newstop',state.topNews)
     return{
         newsTop:state.topNews
     }
