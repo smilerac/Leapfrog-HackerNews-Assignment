@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router';
+import { Link, BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import './App.css';
+//components
+import topNews from './components/topNews/topNews.js';
+// import newNews from './components/newNews.js';
+// import bestNews from './components/bestNews.js';
+// import store from './redux/store.js';
+import store from './redux/store';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component {
+
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return (
+      <Provider store = {store}>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/top" component = {topNews} />
+            {/* <Route path="/new" component={newNews} />
+            <Route path="/best" component={bestNews} /> */}
+          </Switch>
+        </BrowserRouter>
+      </Provider>
+    );
+  }
 }
 
 export default App;
