@@ -11,7 +11,7 @@
 
 
 
-## [Live Demo](https://smilerac.github.io/Leapfrog-React-Assignment2)
+## [Live Demo](https://smilerac.github.io/Leapfrog-HackerNews-Assignment)
 
 ## Built With
 
