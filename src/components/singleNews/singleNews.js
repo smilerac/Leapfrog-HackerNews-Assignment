@@ -1,6 +1,7 @@
 import React from 'react';
 import {updateEachNews, updateTopNews} from '../../redux/action';
 import { connect } from 'react-redux';
+import './singleNews.css';
 
 
 
@@ -57,12 +58,14 @@ class singleNews extends React.Component{
         // }else{
             
         return( 
-            <div>
+            <div className = 'sg-container-wrapper'>
                 {/* {this.props.eachNews.title} */}
                 {/* {this.props.eachNews.map(eachNewsStory => <div>{eachNewsStory.title} </div>)} */}
-                <div>Title: {this.state.newsItem.title}</div>
-                <div>By: {this.state.newsItem.by}</div>
-                <a href = {this.state.newsItem.url}>More info here:</a>
+                <div className ='left-container'>
+                    <div className = 'title-container'>Title: {this.state.newsItem.title}</div>
+                    <div className = 'by-container'>By: {this.state.newsItem.by}</div>
+                </div>
+                <a href = {this.state.newsItem.url}>More info</a>
             </div>
         )
     // }

@@ -1,0 +1,30 @@
+*{
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'comfortaa';
+    color: white;
+}
+
+.main-container{
+    background: #65BDC0;
+    border-radius: 60px;   
+    margin: 0 auto; 
+    margin-top: 10px; 
+    height: 100%;
+    
+}
+
+.container-wrapper{
+    background: #FFFFFF;
+    box-shadow: -5px 4px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 60px;    
+    margin: 0 auto;
+    display: block;
+    padding: 35px;
+    height: 100%;
+}
+
+.container{
+    max-width: 800px;
+}

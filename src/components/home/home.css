@@ -1,0 +1,14 @@
+.home-container{
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.home-container p, .home-container h3{
+    color: black;
+}
+
+.home-container h3{
+    margin: 20px 0 10px 0;
+    font-size: 21px;
+}

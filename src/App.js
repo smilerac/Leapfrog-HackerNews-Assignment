@@ -7,8 +7,11 @@ import './App.css';
 import topNews from './components/topNews/topNews.js';
 import newNews from './components/newNews/newNews.js';
 import bestNews from './components/bestNews/bestNews.js';
+import home from './components/home/home.js';
 // import store from './redux/store.js';
 import store from './redux/store';
+import Navbar from './components/navBar/navBar';
+
 
 
 
@@ -22,11 +25,19 @@ class App extends React.Component {
     return (
       <Provider store = {store}>
         <BrowserRouter>
-          <Switch>
-            <Route path="/top" component = {topNews} />
-            <Route path="/new" component={newNews} />
-            <Route path="/best" component={bestNews} />
-          </Switch>
+          <div className = 'main-container'>
+            <Navbar/>
+            <div className = 'container-wrapper'>
+              <div className = 'container'>
+                <Switch>
+                  <Route path="/top" component = {topNews} />
+                  <Route path="/new" component={newNews} />
+                  <Route path="/best" component={bestNews} />
+                  <Route path="/" component = {home} />
+                </Switch>
+              </div>
+          </div>
+          </div>
         </BrowserRouter>
       </Provider>
     );
