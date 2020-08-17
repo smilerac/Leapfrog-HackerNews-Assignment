@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Leapfrog-HackerNews-Assignment/static/css/main.6e51fdcd.chunk.css",
+    "main.js": "/Leapfrog-HackerNews-Assignment/static/js/main.d01fec76.chunk.js",
+    "main.js.map": "/Leapfrog-HackerNews-Assignment/static/js/main.d01fec76.chunk.js.map",
+    "runtime-main.js": "/Leapfrog-HackerNews-Assignment/static/js/runtime-main.ee850afb.js",
+    "runtime-main.js.map": "/Leapfrog-HackerNews-Assignment/static/js/runtime-main.ee850afb.js.map",
+    "static/js/2.9fc9a19a.chunk.js": "/Leapfrog-HackerNews-Assignment/static/js/2.9fc9a19a.chunk.js",
+    "static/js/2.9fc9a19a.chunk.js.map": "/Leapfrog-HackerNews-Assignment/static/js/2.9fc9a19a.chunk.js.map",
+    "index.html": "/Leapfrog-HackerNews-Assignment/index.html",
+    "precache-manifest.339a8bae0262271819cdb44b7ebc7fb3.js": "/Leapfrog-HackerNews-Assignment/precache-manifest.339a8bae0262271819cdb44b7ebc7fb3.js",
+    "service-worker.js": "/Leapfrog-HackerNews-Assignment/service-worker.js",
+    "static/css/main.6e51fdcd.chunk.css.map": "/Leapfrog-HackerNews-Assignment/static/css/main.6e51fdcd.chunk.css.map",
+    "static/js/2.9fc9a19a.chunk.js.LICENSE.txt": "/Leapfrog-HackerNews-Assignment/static/js/2.9fc9a19a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee850afb.js",
+    "static/js/2.9fc9a19a.chunk.js",
+    "static/css/main.6e51fdcd.chunk.css",
+    "static/js/main.d01fec76.chunk.js"
+  ]
+}
